@@ -35,7 +35,7 @@ function getHumanChoice() {
 // Compute the winner
 function computeWinner(humChoice, compChoice) {
     if (humChoice === compChoice) {
-        return "It's a tie!";
+        return "It's a tie! Refresh to play again.";
     }
 
     // Compute winning combinations
