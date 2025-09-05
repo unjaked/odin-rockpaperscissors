@@ -32,10 +32,12 @@ function getHumanChoice() {
     }
 }
 
-// Compute the winner
+// Compute the winner for a round
 function computeWinner(humChoice, compChoice) {
+
+    // Tie
     if (humChoice === compChoice) {
-        return "It's a tie! Refresh to play again.";
+        return "It's a tie!";
     }
 
     // Compute winning combinations
@@ -75,7 +77,7 @@ playRound();
 
 // Declare winner
 if (humanScore > computerScore) {
-    alert(`You beat the computer! Your score: ${humanScore}`);
+    alert(`You beat the computer! Your score: ${humanScore}. Refresh to play again.`);
 }
 
 else if (humanScore === computerScore) {
@@ -83,5 +85,5 @@ else if (humanScore === computerScore) {
 }
     
 else {
-    alert(`You lost!: Your score: ${humanScore}`);
+    alert(`You lost!: Your score: ${humanScore}. Refresh to play again.`);
 }
